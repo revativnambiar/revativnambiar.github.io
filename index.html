@@ -1,203 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Revati V. Nambiar | Portfolio</title>
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background: #0f172a;
-            color: white;
-            line-height: 1.6;
-        }
-
-        header {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 30px;
-        }
-
-        .hero {
-            max-width: 850px;
-        }
-
-        .hero h1 {
-            font-size: 60px;
-            margin-bottom: 10px;
-        }
-
-        .hero h1 span {
-            color: #38bdf8;
-        }
-
-        .hero h2 {
-            font-size: 25px;
-            font-weight: normal;
-            color: #cbd5e1;
-            margin-bottom: 20px;
-        }
-
-        .hero p {
-            color: #94a3b8;
-            font-size: 18px;
-            margin-bottom: 30px;
-        }
-
-        .button {
-            display: inline-block;
-            padding: 12px 25px;
-            background: #38bdf8;
-            color: #0f172a;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: bold;
-        }
-
-        section {
-            padding: 80px 10%;
-        }
-
-        section h2 {
-            font-size: 35px;
-            margin-bottom: 25px;
-            color: #38bdf8;
-        }
-
-        .card {
-            background: #1e293b;
-            padding: 25px;
-            border-radius: 15px;
-            margin-bottom: 20px;
-        }
-
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-        }
-
-        .skill {
-            background: #1e293b;
-            padding: 10px 18px;
-            border-radius: 20px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 30px;
-            color: #94a3b8;
-            border-top: 1px solid #334155;
-        }
-
-        @media (max-width: 600px) {
-            .hero h1 {
-                font-size: 42px;
-            }
-
-            section {
-                padding: 60px 7%;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Revati V Nambiar — B.Tech Artificial Intelligence & Data Science student portfolio">
+  <title>Revati V Nambiar | AI & Data Science</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <header class="navbar">
+    <a class="logo" href="#home">RV<span>.</span></a>
+    <button class="menu-btn" aria-label="Open navigation">☰</button>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-<header>
-    <div class="hero">
-        <h1>Hi, I'm <span>Revathi</span></h1>
-
-        <h2>B.Tech Computer Science & Engineering<br>
-        AI & Data Science</h2>
-
-        <p>
-            A passionate student exploring Artificial Intelligence,
-            Data Science, programming and technology.
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content reveal">
+        <p class="eyebrow">B.TECH AI & DATA SCIENCE • 2026 — PRESENT</p>
+        <h1>Hi, I'm <span>Revati</span>.<br>I build with curiosity.</h1>
+        <p class="hero-text">
+          First-year Artificial Intelligence & Data Science student at Karunya Institute
+          of Technology and Sciences, interested in programming, AI and emerging technologies.
         </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#contact">Let's Connect ↗</a>
+          <a class="btn secondary" href="#skills">Explore My Skills</a>
+        </div>
+      </div>
 
-        <a href="#about" class="button">Explore My Portfolio</a>
-    </div>
-</header>
+      <div class="hero-card reveal">
+        <div class="orb"></div>
+        <div class="profile-wrap">
+          <div class="profile-ring"></div>
+          <img src="profile-photo.jpeg" alt="Revati V Nambiar" class="profile-photo">
+          <div class="profile-label">
+            <span>REVATI V NAMBIAR</span>
+            <small>AI & DATA SCIENCE</small>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<section id="about">
-    <h2>About Me</h2>
-
-    <div class="card">
+    <section id="about" class="section two-col">
+      <div class="section-heading reveal">
+        <p class="eyebrow">01 — ABOUT</p>
+        <h2>Turning learning<br>into <span>possibilities.</span></h2>
+      </div>
+      <div class="about-copy reveal">
         <p>
-            I am a Computer Science and Engineering student specializing
-            in Artificial Intelligence and Data Science. I am interested
-            in learning programming, machine learning, data science and
-            emerging technologies.
+          I'm a first-year B.Tech Artificial Intelligence & Data Science student with
+          a strong interest in programming, artificial intelligence and emerging technologies.
         </p>
-    </div>
-</section>
-
-<section>
-    <h2>Skills</h2>
-
-    <div class="skills">
-        <div class="skill">Python</div>
-        <div class="skill">C</div>
-        <div class="skill">Java</div>
-        <div class="skill">HTML</div>
-        <div class="skill">Data Science</div>
-        <div class="skill">Machine Learning</div>
-        <div class="skill">MATLAB</div>
-    </div>
-</section>
-
-<section>
-    <h2>Projects</h2>
-
-    <div class="card">
-        <h3>AI-Powered Educational Content Generator</h3>
         <p>
-            A project focused on using artificial intelligence to
-            generate educational content and support personalized learning.
+          I'm currently focused on building practical skills through academic learning,
+          projects and certifications, while developing my foundation in programming and data science.
         </p>
-    </div>
+        <div class="stats">
+          <div><strong>2026</strong><small>Started B.Tech</small></div>
+          <div><strong>4</strong><small>Core technologies</small></div>
+          <div><strong>4+</strong><small>Certifications</small></div>
+        </div>
+      </div>
+    </section>
 
-    <div class="card">
-        <h3>EV Charging Demand Prediction</h3>
-        <p>
-            A machine learning project using a decision tree model
-            to analyze and predict electric vehicle charging demand.
-        </p>
-    </div>
-</section>
+    <section id="skills" class="section dark-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">02 — SKILLS</p>
+        <h2>Tools I'm <span>learning.</span></h2>
+      </div>
+      <div class="skills-grid">
+        <article class="skill reveal"><span>01</span><h3>Python</h3><p>Programming foundation and problem solving.</p></article>
+        <article class="skill reveal"><span>02</span><h3>C Programming</h3><p>Building core programming and logical thinking.</p></article>
+        <article class="skill reveal"><span>03</span><h3>Java</h3><p>Learning object-oriented programming concepts.</p></article>
+        <article class="skill reveal"><span>04</span><h3>HTML</h3><p>Creating structured and responsive web pages.</p></article>
+      </div>
+    </section>
 
-<section>
-    <h2>Education</h2>
+    <section id="education" class="section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">03 — EDUCATION</p>
+        <h2>My academic <span>journey.</span></h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="year">2026 — PRESENT</div>
+          <div><h3>Karunya Institute of Technology and Sciences</h3><p>B.Tech — Artificial Intelligence & Data Science</p></div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="year">2025</div>
+          <div><h3>Sacred Heart Higher Secondary School, Thevara</h3><p>Completed Higher Secondary Education — Class XII</p></div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="year">2023</div>
+          <div><h3>Rajagiri Higher Secondary School, Kalamassery</h3><p>Completed Secondary Education — Class X</p></div>
+        </div>
+      </div>
+    </section>
 
-    <div class="card">
-        <h3>B.Tech Computer Science & Engineering</h3>
-        <p>Artificial Intelligence & Data Science</p>
-        <p>Karunya Institute of Technology and Sciences</p>
-    </div>
-</section>
+    <section id="certifications" class="section light-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">04 — CERTIFICATIONS</p>
+        <h2>Learning beyond<br>the <span>classroom.</span></h2>
+      </div>
+      <div class="cert-grid">
+        <article class="cert reveal"><div class="cert-number">01</div><h3>Introduction to Modern AI</h3><p>Cisco Networking Academy • 2026</p></article>
+        <article class="cert reveal"><div class="cert-number">02</div><h3>Project Management Fundamentals</h3><p>IBM SkillsBuild • 2026</p></article>
+        <article class="cert reveal"><div class="cert-number">03</div><h3>Introduction to Data Science</h3><p>Infosys Springboard • 2026</p></article>
+        <article class="cert reveal"><div class="cert-number">04</div><h3>LCC Computer Education Certifications</h3><p>Computer education certifications</p></article>
+      </div>
+    </section>
 
-<section>
-    <h2>Contact</h2>
+    <section id="strengths" class="section two-col">
+      <div class="section-heading reveal">
+        <p class="eyebrow">05 — STRENGTHS</p>
+        <h2>How I <span>work.</span></h2>
+      </div>
+      <div class="tag-cloud reveal">
+        <span>Leadership</span><span>Team Management</span><span>Communication</span>
+        <span>Adaptability</span><span>Time Management</span>
+      </div>
+    </section>
 
-    <div class="card">
-        <p>GitHub: revativnambiar</p>
-    </div>
-</section>
+    <section id="contact" class="contact-section">
+      <div class="contact-inner reveal">
+        <p class="eyebrow">06 — CONTACT</p>
+        <h2>Let's build something<br><span>interesting.</span></h2>
+        <p>I'm open to learning, collaborating and exploring opportunities in AI, Data Science and software development.</p>
+        <a class="email-link" href="mailto:revativnambiar@gmail.com">revativnambiar@gmail.com ↗</a>
+        <div class="contact-details">
+          <span>📍 Cochin, Kerala</span>
+          <span>📞 +91 97478 72000</span>
+          <span>🌐 English • Malayalam</span>
+        </div>
+      </div>
+    </section>
+  </main>
 
-<footer>
-    © 2026 Revati V. Nambiar. All Rights Reserved.
-</footer>
+  <footer>
+    <span>© 2026 Revati V Nambiar</span>
+    <span>AI • DATA SCIENCE • PROGRAMMING</span>
+  </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
